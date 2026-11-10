@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Adiba ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg,#ffe0ed,#ffc1dc,#f9d9ff);
+  color: #99466f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 20px;
+}
+
+.page {
+  display: none;
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+  padding: 30px 23px;
+  border-radius: 30px;
+  background: rgba(255,255,255,.65);
+  border: 2px solid rgba(255,255,255,.9);
+  box-shadow: 0 20px 45px rgba(177,75,125,.22),
+              inset 0 3px 10px white;
+  animation: appear .6s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes appear {
+  from {opacity:0;transform:translateY(20px) scale(.96);}
+  to {opacity:1;transform:translateY(0) scale(1);}
+}
+
+h1 {
+  font-size: 29px;
+  margin: 12px 0;
+  color: #d94d91;
+  text-shadow: 0 3px 5px #ffc1dc;
+}
+
+h2 {
+  font-size: 23px;
+  margin: 12px 0;
+  color: #d94d91;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.kaomoji {
+  font-size: 40px;
+  margin: 20px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% {transform:translateY(0);}
+  50% {transform:translateY(-9px);}
+}
+
+.flower {
+  font-size: 25px;
+  margin: 12px;
+  display: inline-block;
+  animation: sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+  50% {transform:rotate(15deg) scale(1.12);}
+}
+
+button {
+  border: none;
+  padding: 14px 27px;
+  border-radius: 40px;
+  margin-top: 22px;
+  background: linear-gradient(145deg,#ff9bc8,#ed5e9f);
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 7px 0 #c84b84,
+              0 12px 20px #e9a0c2;
+  cursor: pointer;
+  transition: .25s;
+}
+
+button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 0 #c84b84,
+              0 15px 22px #e9a0c2;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 3px 0 #c84b84;
+}
+
+.message {
+  text-align: left;
+  background: rgba(255,255,255,.55);
+  border-radius: 20px;
+  padding: 18px;
+  line-height: 2;
+  font-size: 14px;
+  box-shadow: inset 0 2px 8px white;
+}
+
+.promise {
+  background: linear-gradient(145deg,#fff7fb,#ffe0ed);
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0 5px 12px rgba(180,70,120,.12);
+  font-weight: 600;
+  transition: .3s;
+}
+
+.promise:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+
+.small {
+  font-size: 12px;
+  opacity: .75;
+  margin-top: 18px;
+}
+
+.progress {
+  font-size: 12px;
+  margin-top: 20px;
+  opacity: .65;
+}
+
+.floating {
+  position: fixed;
+  bottom: -40px;
+  animation: rise 8s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+  opacity: .7;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+  <div class="flower">🌷 🌸 🌷</div>
+  <h1>Hey, Adiba ♡</h1>
+  <p>I made a little something for you...</p>
+
+  <div class="kaomoji">(⁠灬⁠º⁠‿⁠º⁠灬⁠)⁠♡</div>
+
+  <h2>Will you open it?</h2>
+  <p class="small">A tiny website, with a big message.</p>
+
+  <button onclick="nextPage(2)">Open me ♡</button>
+  <div class="progress">Page 1 of 4</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+  <div class="flower">🌸 💗 🌸</div>
+  <h1>I'm Sorry, Pakhi</h1>
+
+  <div class="kaomoji">(⁠╥⁠﹏⁠╥⁠)</div>
+
+  <div class="message">
+    Adiba, please forgive me, darling.
+
+    I just want to tell you everything that happens to me.
+    Even if a girl tries to flirt with me, I'll first tell you
+    and ask you what should I do. At least that's what I believe.
+
+    Even you don't need to worry in my absence.
+    I trust you and I'm sure you also trust me, babe.
+
+    You don't need to worry. No matter how many girls are
+    there, I'm only yours, pakhi.
+
+    Only Ador's Zoobidu.
+
+    No one in this multiverse can replace you, sweetheart.
+
+    Please don't be angry with me...
+    Forgive me...
+    <br><br>
+    <b>Your Love, Zoobidu. ♡</b>
+  </div>
+
+  <button onclick="nextPage(3)">Next page 🌷</button>
+  <div class="progress">Page 2 of 4</div>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+  <div class="flower">🌷 🌼 🌷</div>
+  <h1>My Promises ♡</h1>
+  <p>A few things I want you to know...</p>
+
+  <div class="kaomoji">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</div>
+
+  <div class="promise">💗 I'm only yours.</div>
+  <div class="promise">🌸 None can replace you.</div>
+  <div class="promise">🧸 If you don't like anything, confront me, darling.</div>
+  <div class="promise">💕 I love you.</div>
+
+  <button onclick="nextPage(4)">One last thing... ♡</button>
+  <div class="progress">Page 3 of 4</div>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+  <div class="flower">🌸 🌷 🌸</div>
+
+  <h1>For My Pakhi ♡</h1>
+
+  <div class="kaomoji">
+    (⁠づ⁠￣⁠ ⁠³⁠￣⁠)⁠づ ♡
+  </div>
+
+  <h2>You're irreplaceable.</h2>
+
+  <p>
+    Whatever happens, I hope we can always talk things
+    through and understand each other.
+    <br><br>
+    You are special to me, Adiba. ♡
+  </p>
+
+  <div class="kaomoji">(⁠｡⁠♡⁠‿⁠♡⁠｡⁠)</div>
+
+  <h2>With love,</h2>
+  <h1>Zoobidu 💗</h1>
+
+  <div class="flower">🦋 🌷 🦋</div>
+
+  <button onclick="nextPage(1)">Read again ↻</button>
+  <div class="progress">Page 4 of 4</div>
+</section>
+
+<script>
+function nextPage(number) {
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.remove("active");
+  });
+
+  document.getElementById("page" + number).classList.add("active");
+
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+const decorations = ["💗","🌸","🌷","💕","✨","🦋","♡"];
+
+setInterval(() => {
+  const item = document.createElement("div");
+  item.className = "floating";
+  item.innerText =
+    decorations[Math.floor(Math.random()*decorations.length)];
+
+  item.style.left = Math.random()*100 + "vw";
+  item.style.fontSize = (15+Math.random()*20) + "px";
+  item.style.animationDuration = (5+Math.random()*5) + "s";
+
+  document.body.appendChild(item);
+
+  setTimeout(() => item.remove(),10000);
+},650);
+</script>
+
+</body>
+</html>
